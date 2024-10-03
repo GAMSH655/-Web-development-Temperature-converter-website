@@ -43,7 +43,7 @@ const temperatureConverter = (unit: string)  => {
     <>
        <div className="rounded-none width[100%] bg-black   p-10  flex items-center justify-center text-center  " style={{height: "100vh"}} >
          <div>  
-          <label htmlFor="temprature" className='text-center text-3xl font-extrabold text-white'  >Temperature</label>
+          <label htmlFor="temprature" className='text-center text-3xl font-extrabold text-white'  >Temperature converter</label>
          <input type="text" className="rounded-lg bg-green-400 text-center w-80 h-12 m-10 block"   placeholder={`Convert to ${tempUnit == "Fahrenheit" ? "Celsius" : "Fahrenheit"}`} value={value}  onChange={(e)=>handleInput(e)} onKeyPress={(event) => {
           if(!/[0-9]/.test(event.key)){
             event.preventDefault();
